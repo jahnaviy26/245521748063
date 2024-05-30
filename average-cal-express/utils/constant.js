@@ -10,7 +10,7 @@ export const API_URL = "http://20.244.56.144/test"
     "accessCode" : "osDvxf"
 }
 
-export const authToken = {
+export const AUTH_TOKEN_CONFIG = {
         "companyName": "Keshav Memorial Institute of Technology",
         "clientID": "4104eb8a-6aee-45a4-b83f-a3277bb817a8",
         "clientSecret": "nzwCZrozhwutTNiE",
