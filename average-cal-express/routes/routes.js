@@ -1,5 +1,5 @@
 import express from "express";
-import { NumberHandler } from "../controllers/numbers.controller";
+import { NumberHandler } from "../controllers/numbers.controller.js";
 const ApiRouter = express.Router();
 
 function debug(req, res) {
