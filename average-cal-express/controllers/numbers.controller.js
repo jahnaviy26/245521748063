@@ -20,11 +20,7 @@ export const NumberHandler = async (req, res) => {
       res.send({ msg: "not vaild number id " });
   }
 
-  // switch (number_id) {
-  //   case "p" | "f" | "e" | "r":
-  //     break;
 
-  // }
 
   switch (number_id) {
     case "p":
@@ -57,6 +53,4 @@ export const NumberHandler = async (req, res) => {
     default:
       res.send({ msg: "not vaild number id " });
   }
-
-  res.send(number_id);
-};
+}
