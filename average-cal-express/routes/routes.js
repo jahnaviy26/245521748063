@@ -16,7 +16,7 @@ function debug(req, res) {
   }
 }
 
-ApiRouter.route("/numbers").post(NumberHandler);
-ApiRouter.route("/numbers").get(debug);
+ApiRouter.route("/numbers/:numberid").post(NumberHandler);
+ApiRouter.route("/numbers/:numberid").get(debug);
 
 export default ApiRouter;
