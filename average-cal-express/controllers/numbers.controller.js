@@ -1,7 +1,8 @@
 import { calculateAverage, getNumber } from "../utils/utils.js";
 
 const get_array = async (key) => {
-  const array = await getNumber(key);
+  const array_of_key = await getNumber(key);
+  return array
 };
 
 export const NumberHandler = async (req, res) => {
