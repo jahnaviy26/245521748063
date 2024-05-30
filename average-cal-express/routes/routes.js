@@ -1,22 +1,22 @@
 import express from "express";
+import { NumberHandler } from "../controllers/numbers.controller";
 const ApiRouter = express.Router();
 
 function debug(req, res) {
-    switch (req.method) {
-      case "GET":
-        console.log(req.query);
-        res.send(req.params);
-        break;
-      case "POST":
-        res.send(req.body);
-        break;
-      default:
-        req.send("");
-        break;
-    }
+  switch (req.method) {
+    case "GET":
+      res.send(req.params);
+      break;
+    case "POST":
+      res.send(req.body);
+      break;
+    default:
+      req.send("");
+      break;
   }
+}
 
-  
-ApiRouter.route("/numbers").post(debug);
+ApiRouter.route("/numbers").post(NumberHandler);
+ApiRouter.route("/numbers").get(debug);
 
-export default  ApiRouter ;
+export default ApiRouter;

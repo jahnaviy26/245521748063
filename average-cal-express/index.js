@@ -14,7 +14,7 @@ app.use("/api", ApiRouter);
 
 const start = async () => {
   const accessToken = await getAuthToken();
-  
+
   try {
     app.listen(PORT, () => {
       console.log(`running on ${PORT}`);
