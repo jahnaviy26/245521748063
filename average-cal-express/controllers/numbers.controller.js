@@ -38,12 +38,21 @@ export const NumberHandler = async (req, res) => {
       break;
     case "f":
       array = await get_array(key, array);
+      res.send({
+        numbers: array,
+      });
       break;
     case "e":
       array = await get_array(key, array);
+      res.send({
+        numbers: array,
+      });
       break;
     case "r":
       array = await get_array(key, array);
+      res.send({
+        numbers: array,
+      });
       break;
     default:
       res.send({ msg: "not vaild number id " });
